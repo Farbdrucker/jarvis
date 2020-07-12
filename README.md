@@ -1,5 +1,5 @@
 # Jarvis
-my bad weather weekend project to have my personal voice assistent to tell me jokes, the current weather or read me Wikipedia articles.
+my bad weather weekend project to have my personal voice assistant to tell me jokes, the current weather or read me Wikipedia articles.
 
 ## Installation
 Clone the repositories
@@ -11,7 +11,7 @@ create a new conda virtual environment `conda create -n jarvis python=3.6` and i
 
 
 
-* Ensure you allow the terminal or python the acces to your microphone device.
+* Ensure you allow the terminal or python the access to your microphone device.
 
 ## Usage
 Simply start the program by running the `main.py` file
@@ -39,7 +39,7 @@ If you want the hear the current weather get you [OpenWeather API key](https://h
 * write unit tests
 * integrate google search engine
 * integrate spotify
-* derive location and country acro for OWM
+* derive location and country acronym for OWM
 
 ---
 GNU General Public License
