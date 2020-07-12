@@ -1,0 +1,4 @@
+numpy==1.19.0
+SpeechRecognition==3.8.1
+pyttsx3==2.90
+PyAudio==0.2.11
