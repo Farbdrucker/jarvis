@@ -20,8 +20,7 @@ def start_listen():
     tts = TextToSpeech()
 
     while True:
-        audio = stt.listen()
-        text = stt.recognize_text(audio)
+        text = stt.transcribe()
 
         output = commands(text)
         tts.speak(output)
