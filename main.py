@@ -23,6 +23,7 @@ def start_listen():
         text = stt.transcribe()
 
         output = commands(text)
+
         tts.speak(output)
 
 
