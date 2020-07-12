@@ -16,13 +16,13 @@ create a new conda virtual environment
 conda create -n jarvis python=3.6
 ```
  
-and install minimal `requirements.txt` with
+and install the minimal `requirements.txt` with
  
 ```shell 
 pip install -r requirements.txt
 ```
 
-For advanced `Command`s `advanced_requirements.txt` are required as well.
+To use more advanced `Command`s, `advanced_requirements.txt` are required as well.
 
 
 * Make sure that the terminal respectively python has access to the microphone
