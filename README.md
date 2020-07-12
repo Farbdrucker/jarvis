@@ -38,7 +38,7 @@ Some simple interactions are predefined, for example
 * **How are you?**
 * **How do they call a quarter pounder with cheese in Paris?**
 
-If you want to hear some funny **jokes** download the `shortjokes.csv` from [kaggle](https://www.kaggle.com/abhinavmoudgil95/short-jokes/data) and place it into the assets and aks for
+If you want to hear some funny **jokes** download the `shortjokes.csv` from [kaggle](https://www.kaggle.com/abhinavmoudgil95/short-jokes/data) and place it into the assets and ask for
 * **Tell me a joke**
 
 If you want to browse **Wikipedia** with the voice assistant ensure to have `advanced_requirements.txt` installed and ask
@@ -48,7 +48,7 @@ If you want the hear the current weather get you [OpenWeather API key](https://h
 * **Show me the weather in CITYNAME**
 
 ## TBD
-* CLI with mic device selection, language and voice
+* CLI with mic device, language and voice selection
 * write unit tests
 * integrate google search engine
 * integrate spotify
