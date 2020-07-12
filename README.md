@@ -1,5 +1,7 @@
 # Jarvis
-my bad weather weekend project to have my personal voice assistant to tell me jokes, the current weather or read me Wikipedia articles.
+My bad weather weekend project to have my personal voice assistant to tell me jokes, the current weather or read me Wikipedia articles.
+
+Tested locally on a Macbook Pro 2018 with Catalina, other OS could fail because of the voice synthesizer.
 
 ## Installation
 Clone the repositories
@@ -7,11 +9,22 @@ Clone the repositories
 git clone https://github.com/Farbdrucker/jarvis.git
 ```
 
-create a new conda virtual environment `conda create -n jarvis python=3.6` and install minimal `requirements.txt` with `pip -r requirements.txt`. For advanced `Command`s `advanced_requirements.txt` are required as well.
+create a new conda virtual environment
+ 
+```shell
+conda create -n jarvis python=3.6
+```
+ 
+and install minimal `requirements.txt` with
+ 
+```shell 
+pip install -r requirements.txt
+```
+
+For advanced `Command`s `advanced_requirements.txt` are required as well.
 
 
-
-* Ensure you allow the terminal or python the access to your microphone device.
+* Make sure that the terminal respectively python has access to the microphone
 
 ## Usage
 Simply start the program by running the `main.py` file
