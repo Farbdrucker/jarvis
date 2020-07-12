@@ -4,7 +4,7 @@ from numpy.random import choice as np_random_choice
 from numpy import round as np_round
 
 from Jarvis.threads import threading
-from Jarvis.log import logging
+import Jarvis.log as logging
 
 JOKES = "assets/shortjokes.csv"
 

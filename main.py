@@ -1,5 +1,5 @@
 from Jarvis.commands import commands
-from Jarvis.log import logging
+import Jarvis.log as logging
 from Jarvis.voice.stt import SpeechToText
 from Jarvis.voice.tts import TextToSpeech
 

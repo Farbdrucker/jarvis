@@ -2,7 +2,7 @@ import time
 
 import speech_recognition as sr
 
-from Jarvis.log import logging
+import Jarvis.log as logging
 from Jarvis.threads import my_threading
 
 

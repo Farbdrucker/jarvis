@@ -2,7 +2,7 @@ import json
 
 import pyttsx3
 
-from Jarvis.log import logging
+import Jarvis.log as logging
 
 SPEAKER_DICT = 'apple_synth_voices.json'
 DEFAULT_VOICE_ID = "com.apple.speech.synthesis.voice.fiona"

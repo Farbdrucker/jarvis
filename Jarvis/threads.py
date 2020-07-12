@@ -3,7 +3,7 @@ import sys
 import time
 from typing import Callable
 
-from Jarvis.log import logging
+import Jarvis.log as logging
 
 
 def threading(fun: Callable, *args, **kwargs):

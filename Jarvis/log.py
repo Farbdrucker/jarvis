@@ -14,35 +14,40 @@ class color:
     END = '\033[0m'
 
 
-class logging:
-    @staticmethod
-    def prep(func):
-        return f"{now()} {func}: ".upper()
+def pprint(func):
+    def wrapper(msg):
+        c = func(msg)
+        print(f"{c}{now()} {str(func.__name__).upper()}: {msg}{color.END}")
 
-    @staticmethod
-    def pprint(args):
-        print(args + color.END)
+    return wrapper
 
-    @staticmethod
-    def info(args):
-        logging.pprint(logging.prep("info") + args)
 
-    @staticmethod
-    def warning(args):
-        logging.pprint(color.BOLD + color.RED + logging.prep("warning") + args)
+@pprint
+def info(args):
+    return ''
 
-    @staticmethod
-    def msg(args):
-        logging.pprint(color.BOLD + logging.prep("message") + args)
 
-    @staticmethod
-    def jarvis(args):
-        logging.pprint(color.BOLD + color.CYAN + logging.prep("jarvis") + args)
+@pprint
+def warning(args):
+    return color.BOLD + color.RED
 
-    @staticmethod
-    def understood(args):
-        logging.pprint(color.BOLD + color.YELLOW + logging.prep("input") + args)
 
-    @staticmethod
-    def debug(args):
-        logging.pprint(logging.prep("debug") + args)
+@pprint
+def msg(args):
+    return color.BOLD
+
+
+@pprint
+def jarvis(args):
+    return color.BOLD + color.CYAN
+
+
+@pprint
+def understood(args):
+    return color.BOLD + color.YELLOW
+
+
+@pprint
+def debug(args):
+    return ''
+
